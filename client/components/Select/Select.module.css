@@ -1,0 +1,33 @@
+.select {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	grid-template-areas:
+		"text arrow"
+		"line line";
+
+	align-items: center;
+
+	width: 270px;
+	height: 30px;
+}
+
+.text {
+	grid-area: text;
+
+	margin: 0;
+
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 20px;
+}
+
+.arrow {
+	grid-area: arrow;
+
+	justify-self: end;
+}
+
+.line {
+	grid-area: line;
+}

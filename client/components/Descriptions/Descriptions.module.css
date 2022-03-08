@@ -1,0 +1,10 @@
+.descriptions {
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+
+	gap: 40px;
+
+	justify-content: start;
+
+	height: 75px;
+}

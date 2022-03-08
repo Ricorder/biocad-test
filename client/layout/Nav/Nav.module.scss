@@ -1,0 +1,25 @@
+.nav {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+
+	align-items: center;
+
+	justify-content: space-between;
+
+	width: 1170px;
+	height: 100px;
+}
+
+.menu {
+	display: grid;
+	grid-template-columns: repeat(9, auto);
+
+	column-gap: 30px;
+
+	font-size: 14px;
+	line-height: 0px;
+
+	a:hover {
+		color: var(--blue);
+	}
+}

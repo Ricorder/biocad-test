@@ -1,0 +1,40 @@
+.description {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 15px;
+
+	align-items: center;
+
+	cursor: pointer;
+}
+
+.blue {
+	fill: var(--blue);
+}
+
+.cyan {
+	fill: var(--cyan);
+}
+
+.red {
+	fill: var(--red);
+}
+
+.violet {
+	fill: var(--violet);
+}
+
+.white {
+	fill: var(--white);
+}
+
+.text {
+	margin: 0;
+
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.button {
+	cursor: pointer;
+}

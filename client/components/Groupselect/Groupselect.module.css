@@ -1,0 +1,11 @@
+.groupselect {
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+
+	align-content: center;
+
+	width: 1170px;
+	height: 75px;
+
+	margin: 0;
+}

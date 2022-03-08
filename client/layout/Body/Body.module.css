@@ -1,0 +1,38 @@
+.body {
+	margin-top: 20px;
+	margin-bottom: 120px;
+}
+
+.border {
+	border-bottom: solid 1px var(--grey-lines);
+}
+
+.tophead {
+	display: grid;
+	grid-template-columns: 670px 500px;
+	grid-template-rows: 50px;
+
+	border: solid 1px var(--grey-lines);
+}
+
+.firstsquare {
+	display: grid;
+
+	align-content: center;
+	justify-content: center;
+
+	border-right: solid 1px var(--grey-lines);
+
+	font-size: 18px;
+	line-height: 18px;
+}
+
+.secondsquare {
+	display: grid;
+
+	align-content: center;
+	justify-content: center;
+
+	font-size: 18px;
+	line-height: 18px;
+}

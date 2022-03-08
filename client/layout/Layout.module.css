@@ -1,0 +1,44 @@
+.wrapper {
+	display: grid;
+	grid-template-columns: 2600px;
+	grid-template-rows: 100px auto 320px;
+
+	align-items: center;
+	justify-items: center;
+
+	justify-content: center;
+
+	min-height: 100vh;
+	grid-template-areas:
+		"nav"
+		"main"
+		"footer";
+}
+
+.nav {
+	grid-area: nav;
+
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto;
+
+	justify-items: center;
+}
+
+.maim {
+	grid-area: main;
+}
+
+.body {
+	grid-area: body;
+}
+
+.footer {
+	grid-area: footer;
+
+	display: grid;
+
+	padding: 60px 0;
+
+	justify-items: center;
+}

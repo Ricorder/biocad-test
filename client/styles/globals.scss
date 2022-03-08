@@ -1,0 +1,30 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	color: var(--dark-blue);
+	background-color: var(--white);
+
+	font-family: var(--font-family);
+
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration: none;
+
+	color: inherit;
+}
+
+:root {
+	--dark-blue: #0C204D;
+	--light-grey2: #F4F4F4;
+	--blue: #0067BB;
+	--violet: #402985;
+	--white: white;
+	--grey-lines: #E8E8EC;
+	--light-grey: #FAFAFB;
+	--red: #FA6469;
+	--cyan: #78E6D0;
+	--font-family: Roboto, sans-serif;
+}

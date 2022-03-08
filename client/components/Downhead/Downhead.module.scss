@@ -1,0 +1,20 @@
+.downhead {
+	display: grid;
+	grid-template-columns: 20px 250px 200px 200px 100px 100px 100px 100px 100px;
+	grid-template-rows: 50px;
+
+	color: var(--white);
+	background-color: var(--dark-blue);
+
+	div {
+		display: grid;
+
+		align-content: center;
+
+		text-align: center;
+
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 16px;
+	}
+}

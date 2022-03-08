@@ -1,0 +1,37 @@
+.box {
+	position: relative;
+	z-index: 1;
+
+	display: grid;
+	grid-template-columns: [start] auto [middle] auto [end];
+	grid-template-rows: [start] auto [middle] auto [end];
+
+	align-content: center;
+
+	background: url("./carTCell.png") no-repeat 180px 412px;
+}
+
+.htag {
+	display: grid;
+	align-content: space-between;
+	align-self: center;
+
+	grid-row: start / end;
+
+	width: 380px;
+	height: 210px;
+}
+
+.h1 {
+	margin: 0;
+
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 70px;
+}
+
+.dots {
+	z-index: 2;
+
+	justify-self: end;
+}

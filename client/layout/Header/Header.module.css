@@ -1,0 +1,18 @@
+.header {
+	display: grid;
+	grid-template-columns: 585px 585px;
+
+	height: 660px;
+}
+
+.head {
+	grid-area: header;
+
+	display: grid;
+
+	justify-content: center;
+	justify-items: start;
+
+	width: 2600px;
+	height: 810px;
+}
