@@ -1,0 +1,68 @@
+version: "3"
+
+services:
+  # Backend / MongoDB
+  #mongodb:
+  #  image: mongo
+  #  volumes:
+  #    - ./apps/database/data:/data/db
+  #  restart: always
+  #  conmmand: mongod --noauth --smallfiles
+  #  network:
+  #    - docker-network
+
+  # Backend / API
+  appapi:
+    image: api
+    build: ./apps/api
+    volumes:
+      - ./apps/api/public:/user/src/app/public
+    restart: always
+    #depends_on:
+    #  - database
+    networks:
+      - front
+      - back
+
+  # Frontend App
+  appweb:
+    image: web
+    build: ./apps/web
+    restart: always
+    depends_on:
+      - api
+    networks:
+      - front
+
+  # Admin-Panel App
+  appadmin:
+    image: admin
+    build: ./apps/admin
+    restart: always
+    depends_on:
+      - api
+    networks:
+      - front
+
+  # Backend / Proxy
+  proxy:
+    image: nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/proxy.conf
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - api
+    networks:
+      - front
+      - docker-network
+
+networks:
+  front:
+    driver: bridge
+  back:
+    driver: bridge
+  docker-network:
+    driver: bridge

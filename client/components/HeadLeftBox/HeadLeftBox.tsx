@@ -2,7 +2,6 @@ import styles from './HeadLeftBox.module.css';
 import React from 'react';
 import Shape from './shape.svg';
 import Dots from './dots.svg';
-import Image from 'next/image'
 
 function HeadLeftBox(): JSX.Element {
 	return (

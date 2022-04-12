@@ -1,6 +1,6 @@
 const Product = require('./product')
 const { connect, disconnect } = require('mongoose');
-connect('mongodb://localhost:27017/Biocad');
+connect('mongodb://admin:admin@localhost:27017/admin');
 
 const products = [
 		{ typeOfDisease: 'Орфанные заболевания', name: 'ANB-4', mecanism: 'SMN1 transgene AAV9', indication: 'СМА 1 типа', stage: 1},

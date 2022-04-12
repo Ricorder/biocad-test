@@ -1,0 +1,27 @@
+{
+	"name": "biocad-test",
+	"description": "Run example apps",
+	"author": "Demo User <user@gmail.com>",
+	"version": "1.0.0",
+	"license": "ISC",
+	"scripts": {
+    "install:server": "cd server && npm install",
+		"install:client": "cd client && npm install",
+		"install:all": "npm run install:server && npm run install:client",
+
+		"start:server": "npm run start --prefix server --production",
+		"start:client": "npm run start --prefix client --production",    
+		"start:all": "concurrently --kill-others \"npm run start:server\" \"npm run start:client\" ",
+	
+		"build:server": "cd server && npm run build",
+		"build:client": "cd client && npm run build",
+		"build:all": "npm run build:web && npm run build:admin",
+    
+		"dev:server": "npm run dev --prefix server --development -port 8080",
+		"dev:client": "npm run dev --prefix client --development",
+		"dev:all": "concurrently --kill-others \"npm run dev:server\" \"npm run dev:client\" "
+	},
+	"dependencies": {
+		"concurrently": "^7.1.0"
+	}
+}

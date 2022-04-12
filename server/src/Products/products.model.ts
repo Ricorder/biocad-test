@@ -5,6 +5,9 @@ export type ProductDocument = Product & mongoose.Document;
 
 @Schema()
 export class Product {
+  @Prop()
+  _id: string;
+
   @Prop({ required: true })
   typeOfDisease: string;
 

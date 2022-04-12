@@ -67,9 +67,9 @@ function Footer({ ...props }: FooterProps): JSX.Element {
 					</Link>
 				</div>
 				<ShortLine className={styles.line} />
-				<p className={styles.copyright}>
+				<time className={styles.copyright}>
 					Copyright © 2001-{format(new Date(), 'yyyy')}
-				</p>
+				</time>
 			</div>
 		</footer>
 	);
